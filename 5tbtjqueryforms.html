@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> jQuery - Forms </title>
+        <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("select").change(function(){
+                    var selectedOption = $(this).find(":selected").val()
+                    alert("You have selected: " + selectedOption)
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1> jQuery Forms Value Change Example </h1>
+            <form>
+                <select>
+                    Preference:
+                    <option> Morning </option>
+                    <option> Noon </option>
+                    <option> Evening </option>
+                </select>
+            </form>
+        </center>
+    </body>
+</html>

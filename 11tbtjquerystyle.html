@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> jQuery Style </title>
+        <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                margin: 50px;
+                cursor: pointer;
+                border: 3px solid black;
+                display: inline-block;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $(".box").click(function() {
+                    $(this).css("background-color","crimson")
+                })
+            })
+        </script>
+        </head>
+        <body>
+            <center>
+                <h1> jQuery Style Example </h1>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </center>
+        </body>
+        </html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> jQuery-Toggle </title>
+        <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+        <style>
+            p{
+                padding: 20px;
+                font-size: 20px;
+                color:antiquewhite;
+                background-color:rgb(1, 22, 37);
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+               $(".toggle-btn").click(function(){
+                $("p").toggle()
+               })
+            })
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1> jQuery Toggle Example </h1>
+            <hr>
+            <button type="button" class="toggle-btn"> Toggle Elements </button>
+            <p> Jesus said, I will come like a thief! </p>
+        </center>
+    </body>
+</html>

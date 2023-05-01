@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> jQuery-SlideUp & Down </title>
+        <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+        <style>
+            p.ques{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 24px;
+                padding: 20px;
+                color:antiquewhite;
+                background-color:rgb(1, 22, 37);
+            }
+            p.ans{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                padding: 20px;
+                color: white;
+                background-color:rgb(67, 72, 76);
+                display:none;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+              $("p.ques").click(function(){
+                $("p.ans").slideUp(100)
+              })
+              $("p.ques").click(function(){
+                $("p.ans").show()
+              })
+            })
+        </script>
+        <!-- <script>
+            $(document).ready(function(){
+            $("p.ques").click(function(){
+            $("p.ans").slideToggle(50)})
+            })
+        </script> -->
+    </head>
+    <body>
+        <center>
+            <h1> jQuery Slide Up Slide Down Example </h1>
+            <hr>
+            <p class="ques"> Question - Jesus Come Soon!</p>
+            <p class="ans"> Answer - I am coming soon! No one know the hour except Father in Heaven. </p>
+        </center>
+    </body>
+</html>
+
+
